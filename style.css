@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117; /* Tom escuro padrão do GitHub */
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #58a6ff;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #238636; /* Verde do GitHub */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2ea44f;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ==========================================================
+   ESTILOS DO CARD DE PERFIL (Gerado dinamicamente pelo JS)
+   ========================================================== */
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    border: 3px solid #30363d;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #8b949e;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0d1117;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid #30363d;
+}
+
+.stats span {
+    font-size: 14px;
+    color: #8b949e;
+}
+
+.stats strong {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+.repos {
+    text-align: left;
+}
+
+.repos h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 5px;
+}
+
+.repos ul {
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+.repos li {
+    margin-bottom: 10px;
+    background-color: #21262d;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.repos li:hover {
+    border-color: #8b949e;
+    transform: translateX(3px); /* Efeito sutil ao passar o mouse */
+}
+
+.repos a {
+    color: #58a6ff; /* Azul claro clássico de links do GitHub */
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+
+.repos a:hover {
+    text-decoration: underline;
+}
